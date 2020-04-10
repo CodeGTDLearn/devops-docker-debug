@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+
+  docker-debug-api:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: docker-debug-api-image
+    ports:
+      - "8080:8080"
+      - "5005:5005"
+    environment:
+      # Subir o TOMCAT interno do Spring em modode DEbug na porta 5005
+      - DEBUG_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -Xmx1G -Xms128m -XX:MaxMetaspaceSize=128m
+      - SPRING_PROFILE=dev
