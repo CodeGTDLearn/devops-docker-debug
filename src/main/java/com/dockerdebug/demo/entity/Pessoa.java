@@ -6,6 +6,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Pessoa {
-    String nome;
+    String name;
     String sobrenome;
+    String nomedomeio;
+    String nomeXXXXdomeio;
 }

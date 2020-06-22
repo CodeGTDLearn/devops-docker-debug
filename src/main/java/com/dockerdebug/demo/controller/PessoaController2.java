@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/pessoa")
-public class PessoaController {
+public class PessoaController2 {
 
     //http://localhost:8080/pessoa/nomeCompletoO
-    @GetMapping(value = "/nomeCompleto",
+    @GetMapping(value = "/nomeCompleto2",
             produces = MediaType.APPLICATION_JSON_VALUE)
     public Pessoa getPessoaNome() {
         Pessoa pessoa = new Pessoa();
-        pessoa.setName("Paulo11");
+        pessoa.setName("Paulo2");
         pessoa.setSobrenome("Alves AS");
         return pessoa;
     }
