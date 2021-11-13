@@ -10,7 +10,7 @@ import static org.hamcrest.Matchers.not;
 import static org.springframework.http.HttpStatus.OK;
 
 @SpringBootTest
-class DockerdebugApplicationTests {
+class AppDriverTests {
 
 	@Test
 	public void testGetFindOK() {

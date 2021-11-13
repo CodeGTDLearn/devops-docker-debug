@@ -14,9 +14,13 @@
     </parent>
 
     <groupId>com.dockerdebug</groupId>
+
     <artifactId>dockerdebug</artifactId>
+
     <version>0.0.1-SNAPSHOT</version>
+
     <name>dockerdebug</name>
+
     <description>Docker Project and Spring boot to connect debug</description>
 
     <properties>
